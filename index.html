@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deepavali — The Return of Shri Ram</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#ffc766;--ember:#ff8a2a;--ink:#07050a;--text:#f3e6d0;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{margin:0;background:var(--ink);color:var(--text);font-family:'Cormorant Garamond',Georgia,serif}
+canvas{position:fixed;inset:0;width:100%;height:100%;display:block}
+.vig{position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.75));z-index:1}
+.bars::before,.bars::after{content:"";position:fixed;left:0;right:0;height:6vh;background:#000;z-index:2;pointer-events:none}
+.bars::before{top:0}.bars::after{bottom:0}
+main{position:relative;z-index:3}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12vh 7vw;text-align:center}
+.ch{max-width:760px;opacity:0;transform:translateY(40px);filter:blur(8px);transition:all 1.6s cubic-bezier(.2,.7,.2,1)}
+.ch.in{opacity:1;transform:none;filter:none}
+.tag{font-family:Cinzel,serif;letter-spacing:.4em;font-size:.75rem;color:var(--ember);text-transform:uppercase}
+h1,h2{font-family:Cinzel,'Tiro Devanagari Hindi',serif;font-weight:400;margin:.4em 0}
+h1{font-size:clamp(2.6rem,10vw,6.5rem);background:linear-gradient(180deg,#fff3d0,var(--gold) 55%,var(--ember));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 60px rgba(255,150,40,.35)}
+h2{font-size:clamp(1.6rem,5vw,3rem);color:var(--gold)}
+p{font-size:clamp(1.1rem,2.6vw,1.45rem);line-height:1.6;color:#e8d8bd}
+.sans{font-family:'Tiro Devanagari Hindi',serif;font-style:italic;color:var(--gold);font-size:clamp(1.1rem,3vw,1.6rem)}
+.days{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:12px;margin-top:1.4em;text-align:left}
+.days div{border:1px solid rgba(255,199,102,.25);background:rgba(20,10,5,.55);backdrop-filter:blur(6px);padding:12px 14px;border-radius:8px;font-size:1rem;line-height:1.35}
+.days b{display:block;font-family:Cinzel,serif;font-weight:400;color:var(--gold);font-size:.85rem;margin-bottom:4px}
+.hint{position:fixed;bottom:9vh;left:50%;transform:translateX(-50%);z-index:4;font-family:Cinzel,serif;font-size:.7rem;letter-spacing:.4em;color:var(--gold);animation:p 2s infinite;transition:opacity 1s}
+@keyframes p{50%{opacity:.3}}
+#load{position:fixed;inset:0;background:#000;z-index:9;display:grid;place-items:center;transition:opacity 2s;font-family:Cinzel,serif;color:var(--gold);letter-spacing:.4em}
+.social{display:flex;gap:18px;justify-content:center;margin-top:2.2em}
+.social a{display:flex;align-items:center;gap:10px;padding:12px 20px;border:1px solid rgba(255,199,102,.4);border-radius:40px;color:var(--gold);text-decoration:none;font-family:Cinzel,serif;font-size:.8rem;letter-spacing:.2em;background:rgba(20,10,5,.55);backdrop-filter:blur(6px);transition:all .4s}
+.social a:hover{background:var(--gold);color:#1a0d05;box-shadow:0 0 30px rgba(255,170,60,.6);transform:translateY(-3px)}
+.social svg{width:20px;height:20px;fill:currentColor}
+</style>
+</head>
+<body>
+<div id="load">AYODHYA · अयोध्या</div>
+<div class="vig"></div><div class="bars"></div>
+<div class="hint" id="hint">SCROLL</div>
+<main>
+<section><div class="ch"><div class="tag">Kartik Amavasya · The darkest night</div><h1>दीपावली</h1><p>The festival of lights — the night an entire kingdom lit the way home for its king.</p></div></section>
+<section><div class="ch"><div class="tag">Chapter I · Fourteen years</div><h2>The Long Exile</h2><p>Bound by his father’s promise, Prince Ram left Ayodhya for fourteen years in the forest, with devoted Sita and brother Lakshman. Ayodhya waited in shadow — and Bharata ruled in Ram’s name, with his sandals upon the throne.</p></div></section>
+<section><div class="ch"><div class="tag">Chapter II · Lanka</div><h2>Dharma Prevails</h2><p>Ravana abducted Sita. With Hanuman and the vanara army, Ram crossed the sea and defeated the demon king of Lanka. Light had conquered darkness; justice, injustice.</p></div></section>
+<section><div class="ch"><div class="tag">Chapter III · The Return</div><h2>The Pushpak Vimana</h2><p>Aboard the celestial flying chariot Pushpak, Ram, Sita and Lakshman soared north across the sky toward home, as the exile ended on a moonless night.</p></div></section>
+<section><div class="ch"><div class="tag">Chapter IV · Ayodhya awakens</div><h2>A Million Diyas</h2><p>The people lit rows of earthen lamps along every street, rooftop and the banks of the Sarayu, so that no shadow could hide the road. Joy, music and sweets filled the city. Citizens thronged the streets, showering petals and cheering as Ram, Sita, Lakshman and Hanuman walked home. Ram was crowned — and Ram Rajya began.</p></div></section>
+<section><div class="ch"><div class="tag">Today · Across India & the world</div><h2>Five Days of Light</h2>
+<div class="days">
+<div><b>DHANTERAS</b>Buying gold & utensils; worshipping Dhanvantari</div>
+<div><b>NARAKA CHATURDASHI</b>Victory over Narakasura; oil baths, early lamps</div>
+<div><b>LAKSHMI PUJA</b>Main night: diyas, rangoli, prayers to Lakshmi & Ganesha</div>
+<div><b>GOVARDHAN PUJA</b>Annakut feast; New Year in many regions</div>
+<div><b>BHAI DOOJ</b>Sisters honour brothers with tilak</div></div>
+<p style="margin-top:1.4em;font-size:1.1rem">Diwali is also marked by Jains, Sikhs (Bandi Chhor Divas) and Buddhists of Nepal’s Newar community, and by Bengal as Kali Puja — each with its own story, one shared light.</p></div></section>
+<section><div class="ch"><p class="sans">असतो मा सद्गमय · तमसो मा ज्योतिर्गमय</p><p><i>Lead me from untruth to truth, from darkness to light.</i></p><h1 style="font-size:clamp(2rem,8vw,4.5rem)">शुभ दीपावली</h1><div class="tag">Happy Diwali</div>
+<!-- UPDATE the two href links below with your own profiles -->
+<div class="social">
+<a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.200.7-3.900-1.500-3.900-1.500-.5-1.300-1.300-1.700-1.300-1.700-1-.7.1-.7.1-.7 1.100.1 1.700 1.200 1.700 1.200 1 1.700 2.700 1.200 3.300.9.1-.7.4-1.200.7-1.500-2.600-.3-5.300-1.300-5.300-5.700 0-1.300.5-2.300 1.200-3.100-.1-.3-.5-1.500.1-3.100 0 0 1-.3 3.200 1.200a11 11 0 0 1 5.800 0c2.200-1.500 3.200-1.200 3.200-1.200.6 1.600.2 2.800.1 3.100.8.800 1.200 1.800 1.200 3.100 0 4.400-2.700 5.400-5.300 5.700.4.400.8 1.100.8 2.200v3.300c0 .3.2.7.800.6 4.600-1.500 7.900-5.800 7.900-10.900C23.500 5.700 18.300.5 12 .5z"/></svg>GITHUB</a>
+<a href="https://www.linkedin.com/in/YOUR-USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.400 20.500h-3.600v-5.600c0-1.300 0-3-1.800-3s-2.100 1.400-2.100 2.900v5.700H9.300V9h3.400v1.600c.5-.9 1.600-1.800 3.400-1.800 3.600 0 4.300 2.400 4.300 5.500v6.200zM5.300 7.400a2.100 2.100 0 1 1 0-4.200 2.100 2.100 0 0 1 0 4.200zM7.100 20.500H3.600V9h3.500v11.500zM22.200 0H1.800C.8 0 0 .8 0 1.700v20.600c0 .9.800 1.700 1.800 1.700h20.400c1 0 1.800-.8 1.800-1.700V1.700C24 .8 23.200 0 22.200 0z"/></svg>LINKEDIN</a>
+</div></div></section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+const R=new THREE.WebGLRenderer({antialias:true});R.setPixelRatio(Math.min(devicePixelRatio,2));R.setSize(innerWidth,innerHeight);
+document.body.prepend(R.domElement);
+const S=new THREE.Scene();S.background=new THREE.Color(0x050309);S.fog=new THREE.FogExp2(0x0a0610,0.006);
+const C=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,1000);
+const rnd=(a,b)=>a+Math.random()*(b-a),clamp=(x,a,b)=>Math.min(b,Math.max(a,x)),sm=(a,b,x)=>{x=clamp((x-a)/(b-a),0,1);return x*x*(3-2*x)};
+// glow texture
+const cv=document.createElement('canvas');cv.width=cv.height=64;const g=cv.getContext('2d'),gr=g.createRadialGradient(32,32,0,32,32,32);
+gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.25,'rgba(255,255,255,.55)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,64,64);
+const glow=new THREE.CanvasTexture(cv);
+const pm=(size,color,op)=>new THREE.PointsMaterial({size,map:glow,color,transparent:true,opacity:op,depthWrite:false,blending:THREE.AdditiveBlending,sizeAttenuation:true});
+// stars
+{const n=1800,a=new Float32Array(n*3);for(let i=0;i<n;i++){const r=400,t=rnd(0,6.283),u=rnd(.05,1);const s=Math.sqrt(1-u*u);a[i*3]=r*s*Math.cos(t);a[i*3+1]=r*u;a[i*3+2]=r*s*Math.sin(t)}
+const gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.BufferAttribute(a,3));S.add(new THREE.Points(gg,pm(2.2,0xcfd8ff,.8)))}
+// ground & river
+const gnd=new THREE.Mesh(new THREE.PlaneGeometry(600,600),new THREE.MeshStandardMaterial({color:0x0b0806,roughness:.9}));gnd.rotation.x=-Math.PI/2;S.add(gnd);
+const river=new THREE.Mesh(new THREE.PlaneGeometry(600,60),new THREE.MeshStandardMaterial({color:0x0a1530,roughness:.1,metalness:.8}));river.rotation.x=-Math.PI/2;river.position.set(0,.03,62);S.add(river);
+// palace
+const P=new THREE.Group(),wall=new THREE.MeshStandardMaterial({color:0x3a2418,roughness:.8}),gold=new THREE.MeshStandardMaterial({color:0xb98a3c,roughness:.4,metalness:.6});
+const add=(geo,mat,x,y,z)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);P.add(m);return m};
+add(new THREE.BoxGeometry(34,7,9),wall,0,3.5,0);
+for(let i=0;i<4;i++)add(new THREE.BoxGeometry(40-i*6,.8,14-i*2.2).translate(0,0,0),wall,0,.4+i*.8-.0,6-i*1.2).position.y=.4+i*.0;
+add(new THREE.CylinderGeometry(0,4.2,13,8),gold,0,13.5,0);add(new THREE.SphereGeometry(3.4,16,10,0,6.283,0,1.57),gold,0,7,0);
+add(new THREE.CylinderGeometry(.1,.1,3,6),gold,0,21,0);
+[-14,14,-9,9].forEach((x,i)=>{const h=i<2?12:9;add(new THREE.BoxGeometry(4,h,4),wall,x,h/2,0);add(new THREE.ConeGeometry(3,5,8),gold,x,h+2.5,0)});
+const winM=new THREE.MeshBasicMaterial({color:0xffb347,transparent:true,opacity:0}),wins=[];
+for(let i=0;i<34;i++){const m=new THREE.Mesh(new THREE.PlaneGeometry(.7,1.5),winM);m.position.set(-15+i%17*1.8,2+Math.floor(i/17)*3,4.55);P.add(m)}
+S.add(P);S.add(new THREE.AmbientLight(0x3a3f70,.5));
+const L=[];[[-12,4,16],[0,5,18],[12,4,16]].forEach(p=>{const l=new THREE.PointLight(0xff8a2a,0,60,1.6);l.position.set(...p);S.add(l);L.push(l)});
+// diyas
+const N=520,dp=[];for(let i=0;i<N;i++){let x,z;if(i<300){x=rnd(-45,45);z=rnd(9,42)}else if(i<420){x=-18+(i-300)/119*36;z=rnd(5.2,6);}else{x=rnd(-60,60);z=rnd(44,52)}dp.push([x,.15+(i>=300&&i<420?rnd(0,6):0),z])}
+dp.sort(()=>Math.random()-.5);
+const dpos=new Float32Array(N*3);dp.forEach((p,i)=>dpos.set(p,i*3));
+const dg=new THREE.BufferGeometry();dg.setAttribute('position',new THREE.BufferAttribute(dpos,3));
+const diyaA=new THREE.Points(dg,pm(2.4,0xffa02e,1)),diyaB=new THREE.Points(dg,pm(.9,0xfff0b0,1));S.add(diyaA,diyaB);dg.setDrawRange(0,0);
+// lanterns
+const LN=90,la=new Float32Array(LN*3);for(let i=0;i<LN;i++)la.set([rnd(-90,90),rnd(2,70),rnd(-30,70)],i*3);
+const lg=new THREE.BufferGeometry();lg.setAttribute('position',new THREE.BufferAttribute(la,3));const lant=new THREE.Points(lg,pm(3.2,0xff7a1c,0));S.add(lant);
+// pushpak
+const PV=new THREE.Group(),pb=new THREE.MeshBasicMaterial({color:0xffd27a});
+PV.add(new THREE.Mesh(new THREE.BoxGeometry(5,1.2,2),pb));PV.add(new THREE.Mesh(new THREE.ConeGeometry(1.3,2.4,6),pb).translateY(1.8));
+const wing=new THREE.Mesh(new THREE.BoxGeometry(.4,.2,9),pb);wing.position.set(0,.2,0);PV.add(wing);
+const halo=new THREE.Sprite(new THREE.SpriteMaterial({map:glow,color:0xffaa44,blending:THREE.AdditiveBlending,transparent:true,depthWrite:false}));halo.scale.set(22,22,1);PV.add(halo);
+const tr=new THREE.BufferGeometry(),ta=new Float32Array(60*3);tr.setAttribute('position',new THREE.BufferAttribute(ta,3));
+const trail=new THREE.Points(tr,pm(5,0xffbb55,.8));S.add(trail);S.add(PV);PV.visible=false;
+// fireworks
+const FW=[];function burst(){const n=140,pos=new Float32Array(n*3),vel=[],col=new THREE.Color().setHSL(rnd(0,.15),1,.6),o=new THREE.Vector3(rnd(-60,60),rnd(35,70),rnd(-40,10));
+for(let i=0;i<n;i++){pos.set([o.x,o.y,o.z],i*3);const t=rnd(0,6.283),u=rnd(-1,1),s=Math.sqrt(1-u*u),v=rnd(8,17);vel.push(new THREE.Vector3(s*Math.cos(t)*v,u*v,s*Math.sin(t)*v))}
+const gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.BufferAttribute(pos,3));const m=pm(2.6,col,1),pt=new THREE.Points(gg,m);S.add(pt);FW.push({pt,vel,m,age:0,pos})}
+// actors
+const MT=(c,e)=>new THREE.MeshStandardMaterial({color:c,roughness:.7,emissive:c,emissiveIntensity:e==null?.3:e});
+function mk(o){const g=new THREE.Group(),sk=MT(o.skin),cl=MT(o.cloth),lg=[],ar=[];
+ const tor=new THREE.Mesh(new THREE.CylinderGeometry(.5,o.dress?.95:.6,o.dress?2.6:1.7,10),cl);tor.position.y=o.dress?1.9:2.15;g.add(tor);
+ const hd=new THREE.Mesh(new THREE.SphereGeometry(.4,14,10),MT(o.face||o.skin));hd.position.y=3.35;g.add(hd);
+ if(!o.dress)[-1,1].forEach(d=>{const p=new THREE.Group();p.position.set(d*.25,1.3,0);p.add(new THREE.Mesh(new THREE.BoxGeometry(.3,1.3,.32).translate(0,-.65,0),MT(o.cloth)));g.add(p);lg.push(p)});
+ [-1,1].forEach(d=>{const p=new THREE.Group();p.position.set(d*.72,2.85,0);p.add(new THREE.Mesh(new THREE.BoxGeometry(.22,1.3,.22).translate(0,-.65,0),sk));g.add(p);ar.push(p)});
+ if(o.crown){const c=new THREE.Mesh(new THREE.ConeGeometry(.42,.7,8),MT(0xffc23a,.6));c.position.y=3.95;g.add(c)}
+ if(o.hair){const h=new THREE.Mesh(new THREE.CylinderGeometry(.3,.1,1.8,8),MT(0x120a08,.1));h.position.set(0,2.7,-.4);g.add(h)}
+ if(o.aura){const a=new THREE.Sprite(new THREE.SpriteMaterial({map:glow,color:o.aura,blending:THREE.AdditiveBlending,transparent:true,depthWrite:false,opacity:.8}));a.scale.set(7,7,1);a.position.y=2.8;g.add(a)}
+ if(o.bow){const b=new THREE.Mesh(new THREE.TorusGeometry(1.2,.05,6,20,Math.PI),MT(0xc89b3c));b.rotation.z=-Math.PI/2;b.position.set(.1,-1.3,0);ar[1].add(b)}
+ if(o.mace){const st=new THREE.Mesh(new THREE.CylinderGeometry(.07,.07,1.6,6),MT(0xd9a43a));st.position.set(0,-1.2,.2);const bl=new THREE.Mesh(new THREE.SphereGeometry(.4,10,8),MT(0xd9a43a,.5));bl.position.y=1;st.add(bl);ar[1].add(st);
+  for(let i=0;i<8;i++){const t=new THREE.Mesh(new THREE.SphereGeometry(.15,8,6),cl);t.position.set(0,1.3+i*.33,-.5-Math.sin(i*.45)*.7);g.add(t)}}
+ g.scale.setScalar(o.s);S.add(g);return{g,lg,ar,ph:o.ph,dx:o.dx,dz:o.dz}}
+const AC=[mk({skin:0x4f86e0,cloth:0xf2c14e,crown:1,aura:0x66aaff,s:1.15,ph:0,dx:0,dz:0,bow:1}),
+ mk({skin:0xe9b98a,cloth:0xd8284a,dress:1,hair:1,crown:1,aura:0xff7799,s:1.05,ph:1,dx:3.2,dz:.5}),
+ mk({skin:0xe9b98a,cloth:0xf3e3a0,crown:1,s:1.1,ph:2,dx:-3.2,dz:1.5,bow:1}),
+ mk({skin:0xe0842a,face:0xc9422a,cloth:0xe0842a,aura:0xff9a30,s:1.35,ph:3,dx:-5.8,dz:-5,mace:1})];
+[[0,7,32],[0,7,48],[0,7,62]].forEach(p=>{const l=new THREE.PointLight(0xff8a2a,0,60,1.6);l.position.set(...p);S.add(l);L.push(l)});
+// crowd
+const CN=90,cm=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.8,emissive:0x2a1408}),
+ bI=new THREE.InstancedMesh(new THREE.CylinderGeometry(.4,.55,1.7,8).translate(0,1.55,0),cm,CN),
+ hI=new THREE.InstancedMesh(new THREE.SphereGeometry(.32,10,8).translate(0,2.75,0),cm,CN),
+ aI=[0,1].map(()=>new THREE.InstancedMesh(new THREE.BoxGeometry(.16,1,.16).translate(0,-.5,0),cm,CN)),
+ CM=[bI,hI,...aI],SK=[0xc68642,0x8d5524,0xe0ac69,0xf1c27d],CL=[0xe63946,0xf4a261,0xe9c46a,0x2a9d8f,0xff6fb5,0x9b5de5,0xffd60a],CP=[];
+for(let i=0;i<CN;i++){const sd=i%2?1:-1,sk=new THREE.Color(SK[i%4]);CP.push({x:sd*rnd(5.5,16),z:rnd(8,68),ph:rnd(0,6.28),ry:-sd*Math.PI/2});bI.setColorAt(i,new THREE.Color(CL[i%7]));[hI,...aI].forEach(m=>m.setColorAt(i,sk))}
+CM.forEach(m=>{m.visible=false;S.add(m)});
+const cd=new THREE.Object3D(),ce=new THREE.Object3D(),mm=new THREE.Matrix4();
+// petals
+const PN=260,pa=new Float32Array(PN*3);for(let i=0;i<PN;i++)pa.set([rnd(-25,25),rnd(0,35),rnd(8,70)],i*3);
+const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pa,3));const pet=new THREE.Points(pg,pm(1.4,0xffa83a,0));S.add(pet);
+// forest, mountains, exile camp, Bharata's vigil, fireflies
+const TN=150,tI=new THREE.InstancedMesh(new THREE.ConeGeometry(2.4,9,7).translate(0,6,0),new THREE.MeshStandardMaterial({color:0xffffff,roughness:1,emissive:0x07140c}),TN),
+ kI=new THREE.InstancedMesh(new THREE.CylinderGeometry(.4,.5,2,6).translate(0,1,0),new THREE.MeshStandardMaterial({color:0x2a1a10}),TN),d0=new THREE.Object3D();
+for(let i=0;i<TN;i++){const sd=i%2?1:-1,sc=rnd(.8,1.9);d0.position.set(sd*rnd(48,110),0,rnd(-30,90));d0.scale.set(sc,sc*rnd(.9,1.4),sc);d0.updateMatrix();tI.setMatrixAt(i,d0.matrix);kI.setMatrixAt(i,d0.matrix);tI.setColorAt(i,new THREE.Color().setHSL(rnd(.28,.4),.5,rnd(.06,.12)))}
+S.add(tI,kI);
+for(let i=0;i<16;i++){const m=new THREE.Mesh(new THREE.ConeGeometry(rnd(25,45),rnd(40,80),6),new THREE.MeshBasicMaterial({color:0x0d0916,fog:false}));m.position.set(-300+i*40+rnd(-15,15),15,rnd(-190,-140));S.add(m)}
+const camp=new THREE.Group();camp.position.set(-14,0,30);
+{const hut=new THREE.Mesh(new THREE.BoxGeometry(5,3,4),new THREE.MeshStandardMaterial({color:0x4a3220,roughness:1}));hut.position.y=1.5;camp.add(hut);
+ const rf=new THREE.Mesh(new THREE.ConeGeometry(4.2,2.4,4),new THREE.MeshStandardMaterial({color:0x6b5a2a,roughness:1}));rf.rotation.y=Math.PI/4;rf.position.y=4.2;camp.add(rf);
+ for(let i=0;i<3;i++){const lgm=new THREE.Mesh(new THREE.CylinderGeometry(.12,.12,1.4,5),new THREE.MeshStandardMaterial({color:0x2a1608}));lgm.position.set(4.5,.15,3);lgm.rotation.set(1.5,i*1.05,0);camp.add(lgm)}}
+const FNn=45,cFa=new Float32Array(FNn*3);for(let i=0;i<FNn;i++)cFa.set([4.5+rnd(-.4,.4),rnd(.2,4),3+rnd(-.4,.4)],i*3);
+const cFg=new THREE.BufferGeometry();cFg.setAttribute('position',new THREE.BufferAttribute(cFa,3));const cFm=pm(2.6,0xff8a20,.95);camp.add(new THREE.Points(cFg,cFm));
+const campL=new THREE.PointLight(0xff7a1c,3.5,40,1.5);campL.position.set(4.5,2,3);camp.add(campL);
+const EX=[mk({skin:0x4f86e0,cloth:0xe3b44a,crown:0,aura:0x66aaff,s:1,ph:0,dx:0,dz:0,bow:1}),mk({skin:0xe9b98a,cloth:0xd8284a,dress:1,hair:1,s:.95,ph:1,dx:0,dz:0}),mk({skin:0xe9b98a,cloth:0xf3e3a0,s:1,ph:2,dx:0,dz:0,bow:1})];
+[[7,0,4.5],[6,0,1],[2.8,0,1.5]].forEach((q,i)=>{EX[i].g.position.set(...q);EX[i].g.rotation.y=-.9+i*.3;camp.add(EX[i].g)});
+S.add(camp);
+const BH=mk({skin:0xe9b98a,cloth:0xe8e0c8,s:1.1,ph:4,dx:0,dz:0});BH.g.position.set(-3.4,0,15);BH.g.rotation.y=.4;BH.ar[0].rotation.z=-.6;BH.ar[1].rotation.z=.6;
+const plat=new THREE.Mesh(new THREE.CylinderGeometry(1.5,1.8,.6,12),MT(0xb98a3c,.4));plat.position.set(0,.3,15);S.add(plat);
+[-.45,.45].forEach(x=>{const sn=new THREE.Mesh(new THREE.BoxGeometry(.5,.18,1),MT(0xffd27a,.7));sn.position.set(x,.7,15);S.add(sn)});
+const wa=new Float32Array([0,1.3,15,-2.2,.2,17,2.2,.2,17,-4,.2,12,4,.2,12,0,.2,19]),wg=new THREE.BufferGeometry();wg.setAttribute('position',new THREE.BufferAttribute(wa,3));const wm=pm(4,0xffa83a,1);S.add(new THREE.Points(wg,wm));
+const wL=new THREE.PointLight(0xffa040,1.8,30,1.6);wL.position.set(0,3,16);S.add(wL);
+const FF=150,ffa=new Float32Array(FF*3);for(let i=0;i<FF;i++)ffa.set([rnd(-70,70),rnd(.5,9),rnd(-10,60)],i*3);
+const ffg=new THREE.BufferGeometry();ffg.setAttribute('position',new THREE.BufferAttribute(ffa,3));const ffm=pm(1.7,0xd8ff70,.9);S.add(new THREE.Points(ffg,ffm));
+// camera path
+const K=[[0,0,[0,7,95],[0,14,0]],[.18,0,[-45,14,70],[0,10,0]],[.38,0,[35,30,75],[0,18,0]],[.55,0,[0,16,60],[0,16,0]],[.72,0,[26,5,50],[0,5,40]],[.86,0,[-20,22,70],[0,22,0]],[1,0,[0,55,115],[0,30,0]]];
+const pv=new THREE.Vector3(),tv=new THREE.Vector3(),pos2=new THREE.Vector3(),look=new THREE.Vector3(),cur=new THREE.Vector3(),curL=new THREE.Vector3(0,14,0);
+let p=0,tp=0,mx=0,my=0;C.position.set(0,7,95);
+addEventListener('scroll',()=>{tp=scrollY/Math.max(1,document.body.scrollHeight-innerHeight);document.getElementById('hint').style.opacity=scrollY>40?0:1},{passive:true});
+addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+addEventListener('resize',()=>{R.setSize(innerWidth,innerHeight);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix()});
+const io=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('in',e.isIntersecting)),{threshold:.35});document.querySelectorAll('.ch').forEach(c=>io.observe(c));
+function seg(t){let i=0;while(i<K.length-2&&t>K[i+1][0])i++;const a=K[i],b=K[i+1],u=sm(0,1,(t-a[0])/(b[0]-a[0]));return[a,b,u]}
+const clock=new THREE.Clock();let fwT=0;
+function loop(){requestAnimationFrame(loop);const dt=Math.min(clock.getDelta(),.05),T=clock.elapsedTime;
+p+=(tp-p)*Math.min(1,dt*2.5);
+const[a,b,u]=seg(p);cur.set(...a[2]).lerp(pos2.set(...b[2]),u);curL.set(...a[3]).lerp(look.set(...b[3]),u);
+// pushpak
+const f=clamp((p-.36)/.2,0,1);PV.visible=f>0&&f<1;
+if(PV.visible){const e=f*f*(3-2*f);PV.position.set(-150+e*150,70-e*52+Math.sin(T*2)*.8,-110+e*130);PV.rotation.y=-.9+e*.5;PV.lookAt;
+const w=Math.sin(f*Math.PI);curL.lerp(PV.position,w*.7);
+const t=tr.attributes.position.array;for(let i=59;i>0;i--){t[i*3]=t[(i-1)*3];t[i*3+1]=t[(i-1)*3+1];t[i*3+2]=t[(i-1)*3+2]}t[0]=PV.position.x;t[1]=PV.position.y;t[2]=PV.position.z;tr.attributes.position.needsUpdate=true}
+trail.visible=PV.visible;
+C.position.copy(cur).add(tv.set(mx*5,-my*3,0));C.lookAt(curL);
+// lighting by progress
+const lit=sm(.52,.82,p);dg.setDrawRange(0,Math.floor(N*lit));
+const fl=.85+.15*Math.sin(T*9)+.08*Math.sin(T*23);diyaA.material.opacity=fl;diyaB.material.opacity=.7+.3*Math.sin(T*13);
+winM.opacity=sm(.5,.8,p)*.9;L.forEach((l,i)=>l.intensity=lit*(2.2+Math.sin(T*8+i)*.4));
+lant.material.opacity=sm(.55,.85,p)*.9;
+const la2=lg.attributes.position.array;for(let i=0;i<LN;i++){la2[i*3+1]+=dt*(1.2+i%5*.3);la2[i*3]+=Math.sin(T+i)*dt*.6;if(la2[i*3+1]>90)la2[i*3+1]=1}lg.attributes.position.needsUpdate=true;
+S.fog.density=.0065-lit*.002;
+// fireworks
+fwT-=dt;if(fwT<=0&&p>.58){burst();fwT=rnd(.5,1.6)/(.3+sm(.6,1,p)*1.2)}
+for(let i=FW.length-1;i>=0;i--){const q=FW[i];q.age+=dt;const arr=q.pos;for(let j=0;j<q.vel.length;j++){const v=q.vel[j];v.y-=6*dt;v.multiplyScalar(.985);arr[j*3]+=v.x*dt;arr[j*3+1]+=v.y*dt;arr[j*3+2]+=v.z*dt}
+q.pt.geometry.attributes.position.needsUpdate=true;q.m.opacity=Math.max(0,1-q.age/2.8);if(q.age>2.8){S.remove(q.pt);q.pt.geometry.dispose();q.m.dispose();FW.splice(i,1)}}
+const w=sm(.5,.88,p),walk=w>0&&w<1?1:0,cz=72-58*w;
+AC.forEach(a=>{const g=a.g,s=Math.sin(T*4+a.ph);g.visible=p>.5;g.position.set(a.dx,Math.abs(s)*.18*walk,cz+a.dz);
+ a.lg.forEach((l,i)=>l.rotation.x=(i?1:-1)*s*.6*walk);a.ar[0].rotation.z=-2.5+Math.sin(T*5+a.ph)*.25;a.ar[1].rotation.x=-s*.5*walk;a.ar[1].rotation.z=.15});
+const rv=sm(.48,.62,p);CM.forEach(m=>m.visible=rv>0);
+if(rv>0){for(let i=0;i<CN;i++){const c=CP[i],j=Math.abs(Math.sin(T*3+c.ph))*.45;cd.position.set(c.x,j,c.z);cd.rotation.y=c.ry;cd.scale.setScalar(rv);cd.updateMatrix();
+  bI.setMatrixAt(i,cd.matrix);hI.setMatrixAt(i,cd.matrix);
+  [-1,1].forEach((d,k)=>{ce.position.set(d*.55,2.3,0);ce.rotation.z=d*(2.5+Math.sin(T*6+c.ph)*.4);ce.updateMatrix();mm.multiplyMatrices(cd.matrix,ce.matrix);aI[k].setMatrixAt(i,mm)})}
+ CM.forEach(m=>m.instanceMatrix.needsUpdate=true)}
+const pp=pg.attributes.position.array;for(let i=0;i<PN;i++){pp[i*3+1]-=dt*(2+i%3);pp[i*3]+=Math.sin(T+i)*dt;if(pp[i*3+1]<0)pp[i*3+1]=35}pg.attributes.position.needsUpdate=true;pet.material.opacity=sm(.55,.75,p)*.9;
+const cs=1-sm(.38,.48,p);camp.visible=cs>0;camp.scale.setScalar(Math.max(cs,.001));const fk=.85+.15*Math.sin(T*11);campL.intensity=cs*3.5*fk;
+for(let i=0;i<FNn;i++){cFa[i*3+1]+=dt*(1.8+i%4*.6);cFa[i*3]+=Math.sin(T*3+i)*dt*.5;if(cFa[i*3+1]>4.5){cFa[i*3+1]=.2;cFa[i*3]=4.5+rnd(-.4,.4)}}cFg.attributes.position.needsUpdate=true;cFm.opacity=.7+.3*Math.sin(T*14);
+EX.forEach((a,i)=>{a.g.rotation.z=Math.sin(T*1.5+i)*.03;a.ar[0].rotation.z=-.1;a.ar[1].rotation.z=.1});BH.g.position.y=Math.sin(T*1.2)*.03;
+wm.opacity=.75+.25*Math.sin(T*10);wL.intensity=1.8*(.85+.15*Math.sin(T*9));
+for(let i=0;i<FF;i++){ffa[i*3]+=Math.sin(T*.7+i)*dt*1.2;ffa[i*3+1]+=Math.cos(T*.9+i*2)*dt*.8;ffa[i*3+2]+=Math.sin(T*.5+i*3)*dt}ffg.attributes.position.needsUpdate=true;ffm.opacity=(.55+.4*Math.sin(T*3))*(1-sm(.55,.7,p));
+R.render(S,C)}
+loop();
+const ld=document.getElementById('load');setTimeout(()=>{ld.style.opacity=0;setTimeout(()=>ld.remove(),2000);document.querySelector('.ch').classList.add('in')},900);
+})();
+</script>
+</body>
+</html>
